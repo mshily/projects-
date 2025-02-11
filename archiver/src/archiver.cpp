@@ -9,13 +9,13 @@ int main(int argc, char **argv) {
     } else if (reader.is_decompress) {
         Decompress(reader.archive_name);
     } else if (reader.is_log) {
-        std::cerr << "archiver -c archive_name file1 [file2 ...] - заархивировать файлы "
-                     "file1, file2, ... и сохранить результат в файл archive_name.\n"
+        std::cerr << "archiver -c archive_name file1 [file2 ...] - zip files "
+                     "file1, file2, ... and save the result to a file archive_name.\n"
                      "\n"
-                     "archiver -d archive_name - разархивировать файлы из архива "
-                     "archive_name и положить в текущую директорию.\n"
+                     "archiver -d archive_name - unzip the files in the archive "
+                     "archive_name and put it in the current directory.\n"
                      "\n"
-                     "archiver -h - вывести справку по использованию программы."
+                     "archiver -h - display help on how to use the program."
                   << std::endl;
     }
     return 0;
