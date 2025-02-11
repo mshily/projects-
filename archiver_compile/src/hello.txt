@@ -1,0 +1,5 @@
+Each of the existing codes are replaced with a new one of the same length, using the following algorithm:
+The first symbol in the list gets assigned a codeword which is the same length as the symbol's original codeword but all zeros. This will often be a single zero ('0').
+Each subsequent symbol is assigned the next binary number in sequence, ensuring that following codes are always higher in value.
+When you reach a longer codeword, then after incrementing, append zeros until the length of the new codeword is equal to the length of the old codeword. This can be thought of as a left shift.
+By following these three rules, the canonical version of the code book produced will be:

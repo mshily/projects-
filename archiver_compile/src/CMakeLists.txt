@@ -1,0 +1,13 @@
+add_executable(
+        archiver
+        archiver.cpp
+        build_tree.cpp
+        tree.cpp
+        archiver.h
+        compressor.cpp
+        decompressor.cpp
+        reader.cpp
+        print_compressor.cpp
+        priority_queue.h
+        BitWriteAndRead.h
+)
